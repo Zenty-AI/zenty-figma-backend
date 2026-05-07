@@ -164,8 +164,14 @@ OLLAMA_URL=http://localhost:ollamaPort
 # plugin auth endpoints
 ``
 POST /api/plugin-auth/github/start
+``
+``
 GET  /api/plugin-auth/github/status?state=...
+``
+``
 GET  /api/plugin-auth/github/callback
+``
+``
 GET  /api/plugin-auth/me
 ``
 
