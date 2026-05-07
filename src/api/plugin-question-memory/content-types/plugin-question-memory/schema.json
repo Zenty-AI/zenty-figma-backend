@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plugin_question_memories",
+  "info": {
+    "singularName": "plugin-question-memory",
+    "pluralName": "plugin-question-memories",
+    "displayName": "Plugin Question Memory"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fingerprint": {
+      "type": "string",
+      "required": true
+    },
+    "displayText": {
+      "type": "text",
+      "required": true
+    },
+    "count": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "min": 1
+    },
+    "lastAskedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

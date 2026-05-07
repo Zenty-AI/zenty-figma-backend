@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plugin_question_global_memories",
+  "info": {
+    "singularName": "plugin-question-global-memory",
+    "pluralName": "plugin-question-global-memories",
+    "displayName": "Plugin Question Global Memory"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fingerprint": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "displayText": {
+      "type": "text",
+      "required": true
+    },
+    "count": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "min": 1
+    },
+    "lastAskedAt": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

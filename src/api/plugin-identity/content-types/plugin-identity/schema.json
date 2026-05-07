@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plugin_identities",
+  "info": {
+    "singularName": "plugin-identity",
+    "pluralName": "plugin-identities",
+    "displayName": "Plugin Identity"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "provider": {
+      "type": "string",
+      "required": true,
+      "default": "github"
+    },
+    "providerUid": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "avatarUrl": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

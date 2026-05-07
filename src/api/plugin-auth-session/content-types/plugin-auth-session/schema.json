@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plugin_auth_sessions",
+  "info": {
+    "singularName": "plugin-auth-session",
+    "pluralName": "plugin-auth-sessions",
+    "displayName": "Plugin Auth Session"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "state": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["pending", "success", "error", "consumed", "expired"],
+      "required": true,
+      "default": "pending"
+    },
+    "provider": {
+      "type": "string",
+      "required": true,
+      "default": "github"
+    },
+    "locale": {
+      "type": "enumeration",
+      "enum": ["ru", "en"],
+      "required": true,
+      "default": "ru"
+    },
+    "expiresAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "errorCode": {
+      "type": "string"
+    },
+    "issuedJwt": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
