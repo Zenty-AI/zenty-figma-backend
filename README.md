@@ -76,10 +76,13 @@ cp .env.example .env
 > then edit .env and replace placeholder values.
 
 # project structure:
-Zenty-Figma-Backend/
+Zenty-Figma-Backend:
 ├── package.json
+
 ├── .env
+
 ├── src/
+
 └── config/
 
 # github oauth setup
