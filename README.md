@@ -77,6 +77,7 @@ cp .env.example .env
 
 # project structure:
 Zenty-Figma-Backend:
+
 ├── package.json
 
 ├── .env
