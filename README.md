@@ -2,7 +2,6 @@
 > github template repository for creating local-first ai backends for zenty helper.
 backend infrastructure for zenty helper — a local-first ai assistant for figma focused on design intelligence and skill analysis.
 ---
-# english
 ## overview
 zenty helper backend is a github template repository for building local-first ai backends for zenty helper.
 strapi powers the plugin auth flow and stores plugin-specific github identity data.
