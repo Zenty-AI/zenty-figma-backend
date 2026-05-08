@@ -316,7 +316,7 @@ module.exports = ({ strapi }) => {
     const baseHeaders = {
       Accept: 'application/vnd.github+json',
       Authorization: `Bearer ${accessToken}`,
-      'User-Agent': 'ZentyAIHelper',
+      'User-Agent': 'LuneAIHelper',
       'X-GitHub-Api-Version': '2022-11-28',
     };
 

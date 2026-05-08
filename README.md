@@ -1,9 +1,9 @@
-# zenty helper backend
-> github template repository for creating local-first ai backends for zenty helper.
-backend infrastructure for zenty helper — a local-first ai assistant for figma focused on design intelligence and skill analysis.
+# lune helper backend
+> github template repository for creating local-first ai backends for lune helper.
+backend infrastructure for lune helper — a local-first ai assistant for figma focused on design intelligence and skill analysis.
 ---
 ## overview
-zenty helper backend is a github template repository for building local-first ai backends for zenty helper.
+lune helper backend is a github template repository for building local-first ai backends for lune helper.
 strapi powers the plugin auth flow and stores plugin-specific github identity data.
 this backend can be used for:
 - plugin auth
@@ -15,8 +15,8 @@ this backend can be used for:
 - ollama integrations
 ---
 ## what is it?
-zenty helper backend is a strapi-based backend used by zenty helper, a local-first ai assistant for figma.
-zenty helper analyzes:
+lune helper backend is a strapi-based backend used by lune helper, a local-first ai assistant for figma.
+lune helper analyzes:
 - figma data
 - design structure
 - visual decisions
@@ -57,11 +57,11 @@ this template already includes:
 ## installation
 ### clone repository:
 ``
-git clone https://github.com/Zenty-AI/Zenty-Figma-Backend.git
+git clone https://github.com/Lune-AI/Lune-Figma-Backend.git
 ``
 ### open project folder:
 ``
-cd Zenty-Figma-Backend
+cd Lune-Figma-Backend
 ``
 ### install dependencies:
 ``
@@ -76,7 +76,7 @@ cp .env.example .env
 > then edit .env and replace placeholder values.
 
 # project structure:
-Zenty-Figma-Backend:
+Lune-Figma-Backend:
 
 ├── package.json
 
@@ -103,18 +103,18 @@ New OAuth App
 ### fill the application form:
 
 Application name:
-> Zenty Helper Local
+> Lune Helper Local
 
 Homepage URL:
 > http://localhost:strapiPort
 
 Application description:
-> Local OAuth app for Zenty Helper Figma Plugin
+> Local OAuth app for Lune Helper Figma Plugin
 
 Authorization callback URL:
 > http://localhost:strapiPort/api/plugin-auth/github/callback
 
-##### use this callback because zenty helper uses a custom plugin auth flow instead of the default strapi oauth provider endpoints.
+##### use this callback because lune helper uses a custom plugin auth flow instead of the default strapi oauth provider endpoints.
 
 # after creating the application, github will provide:
 
@@ -202,7 +202,7 @@ npm run start
 ⸻
 
 ###### philosophy
-###### zenty helper is built around:
+###### lune helper is built around:
 ###### * local-first workflows
 ###### * privacy
 ###### * human-centered ai
